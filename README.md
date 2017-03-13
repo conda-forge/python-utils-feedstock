@@ -13,6 +13,18 @@ Python Utils is a collection of small Python functions and classes which make co
 One of the libraries using Python Utils is Django Utils.
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/python-utils-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/python-utils-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/python-utils-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/python-utils-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/python-utils-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/python-utils-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-utils/badges/version.svg)](https://anaconda.org/conda-forge/python-utils)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-utils/badges/downloads.svg)](https://anaconda.org/conda-forge/python-utils)
+
 Installing python-utils
 =======================
 
@@ -33,7 +45,6 @@ It is possible to list all of the versions of `python-utils` available on your p
 ```
 conda search python-utils --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -69,18 +80,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/python-utils-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/python-utils-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/python-utils-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/python-utils-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/python-utils-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/python-utils-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-utils/badges/version.svg)](https://anaconda.org/conda-forge/python-utils)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-utils/badges/downloads.svg)](https://anaconda.org/conda-forge/python-utils)
 
 
 Updating python-utils-feedstock
