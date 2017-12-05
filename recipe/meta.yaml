@@ -1,6 +1,6 @@
 {% set name = "python-utils" %}
-{% set version = "2.0.0" %}
-{% set sha256 = "746777e47158641cf97da342dffdc5d1f9901823615d1fdab75ce68ce39194dd" %}
+{% set version = "2.2.0" %}
+{% set sha256 = 'd9b8ab1f2a7c8f26ed16a47505f589a5d51c0d1e55869ab40c20e1c4b42af2c0' %}
 
 package:
   name: {{ name|lower }}
@@ -45,3 +45,4 @@ extra:
   recipe-maintainers:
     - maartenbreddels
     - WoLpH
+    - stuertz
