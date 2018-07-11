@@ -16,14 +16,15 @@ One of the libraries using Python Utils is Django Utils.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/python-utils-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/python-utils-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/python-utils-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/python-utils-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/python-utils-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/python-utils-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/python-utils-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/python-utils-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-utils/badges/version.svg)](https://anaconda.org/conda-forge/python-utils)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/python-utils/badges/downloads.svg)](https://anaconda.org/conda-forge/python-utils)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-python--utils-green.svg)](https://anaconda.org/conda-forge/python-utils) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/python-utils.svg)](https://anaconda.org/conda-forge/python-utils) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/python-utils.svg)](https://anaconda.org/conda-forge/python-utils) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/python-utils.svg)](https://anaconda.org/conda-forge/python-utils) |
 
 Installing python-utils
 =======================
