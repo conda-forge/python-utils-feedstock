@@ -1,6 +1,6 @@
 {% set name = "python-utils" %}
-{% set version = "2.3.0" %}
-{% set sha256 = '34aaf26b39b0b86628008f2ae0ac001b30e7986a8d303b61e1357dfcdad4f6d3' %}
+{% set version = "2.4.0" %}
+{% set sha256 = "f21fc09ff58ea5ebd1fd2e8ef7f63e39d456336900f26bdc9334a03a3f7d8089" %}
 
 package:
   name: {{ name|lower }}
@@ -13,8 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 1
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -35,8 +35,9 @@ test:
 about:
   home: https://github.com/WoLpH/python-utils
   license: BSD-3-Clause
+  license_file: LICENSE
   license_family: BSD
-  summary: 'Python Utils is a collection of small Python functions and classes which make common patterns shorter and easier.'
+  summary: Python Utils is a collection of small Python functions and classes which make common patterns shorter and easier.
   description: |
     Python Utils is a collection of small Python functions and classes which make common patterns shorter and easier. It is by no means a complete collection but it has served me quite a bit in the past and I will keep extending it.
     One of the libraries using Python Utils is Django Utils.
