@@ -1,6 +1,6 @@
 {% set name = "python-utils" %}
-{% set version = "2.7.1" %}
-{% set sha256 = "88595bfa054975534a2f813b6c8deb96b44f3b6fad00a927fd062fe65550fadf" %}
+{% set version = "3.0.0" %}
+{% set sha256 = "88530150b01dcbbfb6d62e1557bee3ccfc1f12d72f283dc7653aa969df42de72" %}
 
 package:
   name: {{ name|lower }}
