@@ -1,5 +1,5 @@
 {% set name = "python-utils" %}
-{% set version = "3.0.0" %}
+{% set version = "3.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: "88530150b01dcbbfb6d62e1557bee3ccfc1f12d72f283dc7653aa969df42de72"
+  sha256: 4dace6420c5f50d6509251fa0aee0e2a0b826bbc8a5d2a6d7e99dca80e78a7f3
 
 build:
   noarch: python
