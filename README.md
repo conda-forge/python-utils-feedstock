@@ -1,11 +1,11 @@
-About python-utils
-==================
+About python-utils-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-utils-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/WoLpH/python-utils
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/python-utils-feedstock/blob/main/LICENSE.txt)
 
 Summary: Python Utils is a collection of small Python functions and classes which make common patterns shorter and easier.
 
