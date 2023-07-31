@@ -22,7 +22,7 @@ requirements:
     - pytest
   run:
     - python >=3.8
-    - typing_extensions
+    - typing_extensions > 3.10.0.2
 
 test:
   imports:
