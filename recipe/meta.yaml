@@ -11,17 +11,17 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
     - setuptools
     - pytest
   run:
-    - python >=3.8
+    - python >=3.9
     - typing_extensions >3.10.0.2
 
 test:
