@@ -1,5 +1,5 @@
 {% set name = "python-utils" %}
-{% set version = "3.9.0" %}
+{% set version = "3.9.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 3689556884e3ae53aec5a4c9f17b36e752a3e93a7ba2768c6553fc4dd6fa70ef
+  sha256: eb574b4292415eb230f094cbf50ab5ef36e3579b8f09e9f2ba74af70891449a0
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
