@@ -1,5 +1,5 @@
 {% set name = "python-utils" %}
-{% set version = "3.9.1" %}
+{% set version = "4.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,19 +7,18 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: eb574b4292415eb230f094cbf50ab5ef36e3579b8f09e9f2ba74af70891449a0
+  sha256: 51d84b297d9877205a76e65f970e3275d1aa9c1cf3d508af2c459247eb4fe701
 
 build:
   noarch: python
-  number: 1
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
 
 requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools
-    - pytest
+    - uv-build >=0.11,<0.12
   run:
     - python >={{ python_min }}
     - typing_extensions >3.10.0.2
@@ -27,8 +26,15 @@ requirements:
 test:
   imports:
     - python_utils
+    - python_utils.aio
+    - python_utils.containers
     - python_utils.converters
+    - python_utils.decorators
     - python_utils.formatters
+    - python_utils.generators
+    - python_utils.import_
+    - python_utils.logger
+    - python_utils.time
   requires:
     - pip
     - python {{ python_min }}
@@ -46,7 +52,7 @@ about:
     make common patterns shorter and easier. It is by no means a complete
     collection but it has served me quite a bit in the past and I will keep
     extending it.  One of the libraries using Python Utils is Django Utils.
-  doc_url: http://python-utils.readthedocs.io/
+  doc_url: https://python-utils.readthedocs.io/
   dev_url: https://github.com/WoLpH/python-utils
 
 extra:
