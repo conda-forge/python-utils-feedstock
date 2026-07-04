@@ -12,14 +12,13 @@ source:
 build:
   noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
 
 requirements:
   host:
     - pip
     - python {{ python_min }}
-    - setuptools
-    - pytest
+    - uv-build >=0.11,<0.12
   run:
     - python >={{ python_min }}
     - typing_extensions >3.10.0.2
@@ -27,8 +26,15 @@ requirements:
 test:
   imports:
     - python_utils
+    - python_utils.aio
+    - python_utils.containers
     - python_utils.converters
+    - python_utils.decorators
     - python_utils.formatters
+    - python_utils.generators
+    - python_utils.import_
+    - python_utils.logger
+    - python_utils.time
   requires:
     - pip
     - python {{ python_min }}
@@ -46,7 +52,7 @@ about:
     make common patterns shorter and easier. It is by no means a complete
     collection but it has served me quite a bit in the past and I will keep
     extending it.  One of the libraries using Python Utils is Django Utils.
-  doc_url: http://python-utils.readthedocs.io/
+  doc_url: https://python-utils.readthedocs.io/
   dev_url: https://github.com/WoLpH/python-utils
 
 extra:
