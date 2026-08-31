@@ -11,7 +11,7 @@ Summary: Python Utils is a collection of small Python functions and classes whic
 
 Development: https://github.com/WoLpH/python-utils
 
-Documentation: http://python-utils.readthedocs.io/
+Documentation: https://python-utils.readthedocs.io/
 
 Python Utils is a collection of small Python functions and classes which
 make common patterns shorter and easier. It is by no means a complete
@@ -50,31 +50,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `python-utils` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install python-utils
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install python-utils
 ```
 
-It is possible to list all of the versions of `python-utils` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add python-utils
+# for installing globally
+pixi global install python-utils
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `python-utils` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search python-utils --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search python-utils --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search python-utils --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -86,6 +128,8 @@ mamba repoquery whoneeds python-utils --channel conda-forge
 # List dependencies of `python-utils`:
 mamba repoquery depends python-utils --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
