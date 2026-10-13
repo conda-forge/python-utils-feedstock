@@ -1,5 +1,5 @@
 {% set name = "python-utils" %}
-{% set version = "4.1.1" %}
+{% set version = "4.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: caa4b24521216ab385e160bf48aa01b0157c24c98b07d6442894ec9d34af8435
+  sha256: 40d692f75f676ad7040b0b64b76deebbaf7138d3fe240f67fee43b4a26098286
 
 build:
   noarch: python
